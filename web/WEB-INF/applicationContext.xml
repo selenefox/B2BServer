@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>/META-INF/application.xml</value>
+			</list>
+		</property>
+	</bean>
+
+    <bean id="configBean" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+          <property name="location" value="/META-INF/application.xml"/>
+    </bean>
+
+    <import resource="applicationContext-common.xml"/>
+    <import resource="applicationContext-dao.xml"/>
+    <import resource="applicationContext-manager.xml"/>
+    <import resource="applicationContext-action.xml"/>
+    <import resource="applicationContext-task.xml"/>
+
+    <!-- EhCache Manager -->
+    <bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+    	<property name="shared" value="true" />
+        <property name="configLocation" value="/WEB-INF/ehcache.xml" />
+    </bean>
+</beans>

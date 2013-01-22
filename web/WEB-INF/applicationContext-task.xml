@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="resetindexTask" class="com.selenefox.wms.tasks.ResetPorductIndex">
+
+    </bean>
+    <bean id="resetindexDetailBean" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="resetindexTask"/>
+        <property name="targetMethod" value="exec"/>
+        <property name="concurrent" value="false"/>
+    </bean>
+    <bean id="resetindexTriggerBean" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="resetindexDetailBean"/>
+        <property name="cronExpression" value="${productsn.reset.expression}"/>
+    </bean>
+
+    <bean id="schedulerFactoryBean" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="resetindexTriggerBean"/>
+            </list>
+        </property>
+    </bean>
+</beans>

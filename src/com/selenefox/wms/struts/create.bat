@@ -1,0 +1,1 @@
+"D:\Program Files\Java\jdk1.6.0_18\bin\native2ascii.exe" -encoding utf-8 MessageResouce.properties MessageResouce_zh_CN.properties
