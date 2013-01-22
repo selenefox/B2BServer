@@ -1,12 +1,11 @@
-package com.selenefox.wms.tasks;
+package com.selenefox.b2bserver.manager.users;
 
 /**
  * Created with IntelliJ IDEA.
  * User: SeleneFox
- * Date: 13-1-14
- * Time: 上午11:42
+ * Date: 13-1-22
+ * Time: 下午7:39
  * To change this template use File | Settings | File Templates.
  */
-public interface ITask {
-    public void exec();
+public interface UsersManager {
 }

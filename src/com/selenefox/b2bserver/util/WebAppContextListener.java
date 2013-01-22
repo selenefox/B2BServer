@@ -1,4 +1,4 @@
-package com.selenefox.wms.util;
+package com.selenefox.b2bserver.util;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.context.WebApplicationContext;

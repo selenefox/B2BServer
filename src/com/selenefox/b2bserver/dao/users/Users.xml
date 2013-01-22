@@ -2,9 +2,12 @@
 <!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
         "http://ibatis.apache.org/dtd/sql-map-2.dtd">
 <sqlMap namespace="Users">
-    <typeAlias alias="Users" type="com.selenefox.wms.mode.users.UsersBean"/>
+    <typeAlias alias="Users" type="com.selenefox.b2bserver.mode.users.UsersBean"/>
     <cacheModel id="users-cache" type="LRU" readOnly="true" serialize="false">
         <flushInterval hours="24"/>
         <property name="size" value="500"/>
     </cacheModel>
+    <select id="selectUsersByLogin" cacheModel="users-cache" parameterClass="Users" resultClass="Users">
+        <![CDATA[select * from users where loginname=#loginname#]]>
+    </select>
 </sqlMap>

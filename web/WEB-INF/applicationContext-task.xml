@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="resetindexTask" class="com.selenefox.wms.tasks.ResetPorductIndex">
+    <bean id="resetindexTask" class="com.selenefox.b2bserver.tasks.ResetPorductIndex">
 
     </bean>
     <bean id="resetindexDetailBean" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">

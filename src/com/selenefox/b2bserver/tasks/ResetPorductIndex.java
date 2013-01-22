@@ -1,4 +1,4 @@
-package com.selenefox.wms.tasks;
+package com.selenefox.b2bserver.tasks;
 
 /**
  * Created with IntelliJ IDEA.

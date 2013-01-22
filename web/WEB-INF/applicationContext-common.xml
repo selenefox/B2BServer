@@ -15,7 +15,7 @@
     </tx:advice>
     
     <aop:config>
-        <aop:pointcut id="allManagerMethod" expression="execution(* com.selenefox.wms.manager.*.*(..))"/>
+        <aop:pointcut id="allManagerMethod" expression="execution(* com.selenefox.b2bserver.manager.*.*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="allManagerMethod"/>
     </aop:config>
 

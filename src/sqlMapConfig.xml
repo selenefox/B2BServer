@@ -18,5 +18,5 @@
         </dataSource>
     </transactionManager>
     -->
-    <sqlMap resource="com/zenointel/wms/dao/users/Users.xml"/>
+    <sqlMap resource="com/selenefox/b2bserver/dao/users/Users.xml"/>
 </sqlMapConfig>

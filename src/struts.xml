@@ -8,6 +8,6 @@
     <package name="struts2" extends="struts-default">
 
     </package>
-    <constant name="struts.custom.i18n.resources" value="com.selenefox.wms.struts.MessageResouce"/>
+    <constant name="struts.custom.i18n.resources" value="com.selenefox.b2bserver.struts.MessageResouce"/>
 </struts>
 

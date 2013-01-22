@@ -1,6 +1,6 @@
-package com.selenefox.wms.util;
+package com.selenefox.b2bserver.util;
 
-import com.selenefox.wms.mode.users.UsersBean;
+import com.selenefox.b2bserver.mode.users.UsersBean;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;

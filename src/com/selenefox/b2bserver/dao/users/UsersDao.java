@@ -1,11 +1,11 @@
-package com.selenefox.wms.mode.users;
+package com.selenefox.b2bserver.dao.users;
 
 /**
  * Created with IntelliJ IDEA.
  * User: SeleneFox
- * Date: 13-1-14
- * Time: 上午11:27
+ * Date: 13-1-22
+ * Time: 下午7:40
  * To change this template use File | Settings | File Templates.
  */
-public class UsersBean {
+public interface UsersDao {
 }
