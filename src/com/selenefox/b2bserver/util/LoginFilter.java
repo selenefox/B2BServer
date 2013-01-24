@@ -1,7 +1,5 @@
 package com.selenefox.b2bserver.util;
 
-import com.selenefox.b2bserver.mode.users.UsersBean;
-
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -106,6 +104,6 @@ public class LoginFilter implements Filter {
         }
         HttpSession session = request.getSession(true);
         Object obj = session.getAttribute(checkusersession);
-        return null != obj && obj instanceof UsersBean;
+        return null != obj;
     }
 }

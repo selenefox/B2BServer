@@ -35,7 +35,7 @@
         <filter-class>com.selenefox.b2bserver.util.LoginFilter</filter-class>
         <init-param>
             <param-name>rollbackpage</param-name>
-            <param-value>/timeout.jsp</param-value>
+            <param-value>/login.jsp</param-value>
         </init-param>
         <init-param>
             <param-name>unfilterparam</param-name>

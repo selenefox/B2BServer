@@ -1,0 +1,13 @@
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+        "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+    <field name="loginname">
+        <field-validator type="requiredstring" short-circuit="true">
+            <param name="trim">true</param>
+            <message key="usename.error.empty"/>
+        </field-validator>
+        <field-validator type="email" short-circuit="true">
+            <message key="usename.error.fail"/>
+        </field-validator>
+    </field>
+</validators>

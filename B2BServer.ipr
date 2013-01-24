@@ -21,7 +21,7 @@
             <element id="library" level="project" name="log4j" />
           </element>
         </element>
-        <element id="javaee-facet-resources" facet="WMS/web/Web" />
+        <element id="javaee-facet-resources" facet="B2BServer/web/Web" />
       </root>
     </artifact>
   </component>

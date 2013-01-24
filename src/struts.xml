@@ -5,8 +5,14 @@
 <struts>
     <constant name="struts.objectFactory" value="spring"/>
     <constant name="struts.action.extension" value="action"/>
+    <constant name="struts.ui.theme" value="simple"/>
     <package name="struts2" extends="struts-default">
-
+        <action name="login" class="usersAction" method="login">
+            <result name="success">/admin/index.jsp</result>
+            <result name="input">/login.jsp</result>
+        </action>
+    </package>
+    <package name="admin-struts2" extends="struts-default" namespace="/admin">
     </package>
     <constant name="struts.custom.i18n.resources" value="com.selenefox.b2bserver.struts.MessageResouce"/>
 </struts>
